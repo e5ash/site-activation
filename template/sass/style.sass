@@ -75,6 +75,10 @@ button, input[type="button"], input[type="reset"]
 	&:hover
 		background: url("../img/bg/button-hover.jpg")
 		box-shadow: none
+	&-full-width
+		display: none
+		width: 100%
+		margin-bottom: 50px
 
 
 /* Input */
@@ -346,6 +350,15 @@ button, input[type="button"], input[type="reset"]
 					margin-bottom: 18px
 .elizabeth
 	background: url('../img/bg/elizabeth.jpg') no-repeat left top
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		background: url('../img/bg/elizabeth.png')
+		width: 223px
+		height: 389px
+		left: 32px
+		bottom: 0
 .katharine
 	color: white
 	background: url('../img/bg/katharine.jpg') no-repeat left top

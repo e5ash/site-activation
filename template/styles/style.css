@@ -215,6 +215,10 @@ button, input[type="button"], input[type="reset"] {
     background: url("../img/bg/button-hover.jpg");
     -webkit-box-shadow: none;
             box-shadow: none; }
+  .button-full-width {
+    display: none;
+    width: 100%;
+    margin-bottom: 50px; }
 
 /* Input */
 .input {
@@ -507,7 +511,16 @@ button, input[type="button"], input[type="reset"] {
           margin-bottom: 18px; }
 
 .elizabeth {
-  background: url("../img/bg/elizabeth.jpg") no-repeat left top; }
+  background: url("../img/bg/elizabeth.jpg") no-repeat left top;
+  position: relative; }
+  .elizabeth:before {
+    content: '';
+    position: absolute;
+    background: url("../img/bg/elizabeth.png");
+    width: 223px;
+    height: 389px;
+    left: 32px;
+    bottom: 0; }
 
 .katharine {
   color: white;

@@ -4,6 +4,8 @@
 		margin-right: auto
 	.aside
 		display: none
+	.button-full-width
+		display: block
 @media screen and (max-width: 992px)
 	.footer
 		a
@@ -16,8 +18,15 @@
 		li
 			display: block
 			margin-right: 0
-
+@media screen and (max-width: 960px)
+	.popup
+		width: 90%
 @media screen and (max-width: 850px)
+	.popup
+		width: 95%
+		&__close
+			top: 10px
+			right: 10px
 	body
 		padding-top: 20px
 	.header
@@ -29,9 +38,8 @@
 				right: -33px
 				width: 250px
 
-	.block
+	.block, .button-full-width
 		margin-bottom: 30px
-
 @media screen and (max-width: 805px)
 	.section, .block, .reviews__wrapper
 		width: 100%
@@ -45,8 +53,29 @@
 			display: none
 
 	.plan
+		padding-top: 20px
+		&__title
+			margin-bottom: 10px
+			padding-left: 5px
+			padding-right: 5px
 		.col
 			width: 100%
+		&__list
+			padding-bottom: 10px
+		&__item
+			padding: 15px
+		&__day
+			&:before
+				display: none
+		&__subtitle
+			margin-bottom: 10px
+		&__data
+			margin-left: -6px
+			br
+				display: none
+			img
+				display: block
+				max-width: 100%
 
 	.reviews
 		&__wrapper
@@ -71,9 +100,107 @@
 				left: 10px
 			&:after
 				right: 10px
+@media screen and (max-width: 768px)
+	.popup
+		padding: 30px 20px
+		.col
+			width: 100%
+			text-align: center
+		&__title
+			width: 100%
+			font-size: 24px
+		&__img
+			margin-top: 20px
+			img
+				display: block
+				margin-left: auto
+				margin-right: auto
+				max-width: 100%
+				left: 0
+		&__right
+			padding-top: 20px
+	.input, .button
+		width: 100%
+		max-width: 270px
+
+	.button-full-width
+		max-width: 100%
+@media screen and (max-width: 740px)
+	.electronics
+		width: 100%
+		&__iphone
+			display: none
+			p
+				// display: none
+		&__mac
+			position: relative
+			// margin-left: 100px
+			padding-left: 20px
+			padding-right: 20px
+			img
+				max-width: 100%
+			p
+				display: none
+	.format
+		&__icons
+			width: 100%
+		&__icon
+			margin-left: 0 !important
+			width: 50% !important
+			margin-right: 0 !important
+
+	.elizabeth, .katharine
+		height: auto
+		padding: 10px 20px 20px
+		&__title
+			text-align: center
+	.elizabeth
+		padding-bottom: 370px
+		background: none
+		&:before
+			width: 200px
+			height: 348px
+			background-size: 100%
+			background-repeat: no-repeat
+			left: calc(50% - 100px)
+	.katharine
+		padding-bottom: 300px
+		background: none
+		color: black
+		position: relative
+		&:before
+			display: block
+			position: absolute
+			content: ''
+			background: url('../../upload/katharine.png')
+			width: 261px
+			height: 304px
+			bottom: 0
+			left: calc(50% - 137px)
+	.faq
+		&__title
+			padding-left: 10px
+			padding-right: 10px
+			margin-top: 20px
+			margin-bottom: 10px
+		&__list
+		&__item
+			padding-left: 20px
+			padding-right: 20px
+		&__question
+			font-size: 20px
+			span
+				width: 90%
+	.footer
+		margin-top: 20px
 @media screen and (max-width: 680px)
 	.title
 		font-size: 26px
+	.result
+		height: auto
+		font-size: 20px
+		padding: 20px
+		line-height: normal
 @media screen and (max-width: 620px)
 	.quote
 		background-image: none
@@ -107,10 +234,28 @@
 				font-size: inherit
 				font-weight: 300
 				margin-bottom: 0
-
+	.reviews
+		margin-top: 40px
+		&__title
+			margin-bottom: 10px
+		&__wrapper
+			height: auto
+			margin-bottom: 40px
+		iframe
+			height: 300px
 @media screen and (max-width: 505px)
 	.header
 		background-position-y: 35px
 		&__title
 			padding-left: 3px
 			padding-right: 3px
+
+@media screen and (max-width: 465px)
+	.format
+		&__icon
+			width: 100% !important
+			&:nth-of-type(1)
+				margin-bottom: 30px
+	.reviews
+		iframe
+			height: 200px

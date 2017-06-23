@@ -3,7 +3,9 @@
     margin-left: auto;
     margin-right: auto; }
   .aside {
-    display: none; } }
+    display: none; }
+  .button-full-width {
+    display: block; } }
 
 @media screen and (max-width: 992px) {
   .footer a {
@@ -17,7 +19,16 @@
       display: block;
       margin-right: 0; } }
 
+@media screen and (max-width: 960px) {
+  .popup {
+    width: 90%; } }
+
 @media screen and (max-width: 850px) {
+  .popup {
+    width: 95%; }
+    .popup__close {
+      top: 10px;
+      right: 10px; }
   body {
     padding-top: 20px; }
   .header__img-1 {
@@ -26,7 +37,7 @@
   .header__img-2 {
     right: -33px;
     width: 250px; }
-  .block {
+  .block, .button-full-width {
     margin-bottom: 30px; } }
 
 @media screen and (max-width: 805px) {
@@ -39,8 +50,29 @@
       margin-bottom: 20px; }
     .header__imgs {
       display: none; }
-  .plan .col {
-    width: 100%; }
+  .plan {
+    padding-top: 20px; }
+    .plan__title {
+      margin-bottom: 10px;
+      padding-left: 5px;
+      padding-right: 5px; }
+    .plan .col {
+      width: 100%; }
+    .plan__list {
+      padding-bottom: 10px; }
+    .plan__item {
+      padding: 15px; }
+    .plan__day:before {
+      display: none; }
+    .plan__subtitle {
+      margin-bottom: 10px; }
+    .plan__data {
+      margin-left: -6px; }
+      .plan__data br {
+        display: none; }
+      .plan__data img {
+        display: block;
+        max-width: 100%; }
   .reviews__wrapper {
     background: none;
     margin-left: 0;
@@ -64,9 +96,103 @@
       .quote__title:after {
         right: 10px; } }
 
+@media screen and (max-width: 768px) {
+  .popup {
+    padding: 30px 20px; }
+    .popup .col {
+      width: 100%;
+      text-align: center; }
+    .popup__title {
+      width: 100%;
+      font-size: 24px; }
+    .popup__img {
+      margin-top: 20px; }
+      .popup__img img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        left: 0; }
+    .popup__right {
+      padding-top: 20px; }
+  .input, .button {
+    width: 100%;
+    max-width: 270px; }
+  .button-full-width {
+    max-width: 100%; } }
+
+@media screen and (max-width: 740px) {
+  .electronics {
+    width: 100%; }
+    .electronics__iphone {
+      display: none; }
+    .electronics__mac {
+      position: relative;
+      padding-left: 20px;
+      padding-right: 20px; }
+      .electronics__mac img {
+        max-width: 100%; }
+      .electronics__mac p {
+        display: none; }
+  .format__icons {
+    width: 100%; }
+  .format__icon {
+    margin-left: 0 !important;
+    width: 50% !important;
+    margin-right: 0 !important; }
+  .elizabeth, .katharine {
+    height: auto;
+    padding: 10px 20px 20px; }
+    .elizabeth__title, .katharine__title {
+      text-align: center; }
+  .elizabeth {
+    padding-bottom: 370px;
+    background: none; }
+    .elizabeth:before {
+      width: 200px;
+      height: 348px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      left: -webkit-calc(50% - 100px);
+      left: calc(50% - 100px); }
+  .katharine {
+    padding-bottom: 300px;
+    background: none;
+    color: black;
+    position: relative; }
+    .katharine:before {
+      display: block;
+      position: absolute;
+      content: '';
+      background: url("../../upload/katharine.png");
+      width: 261px;
+      height: 304px;
+      bottom: 0;
+      left: -webkit-calc(50% - 137px);
+      left: calc(50% - 137px); }
+  .faq__title {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px; }
+  .faq__item {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .faq__question {
+    font-size: 20px; }
+    .faq__question span {
+      width: 90%; }
+  .footer {
+    margin-top: 20px; } }
+
 @media screen and (max-width: 680px) {
   .title {
-    font-size: 26px; } }
+    font-size: 26px; }
+  .result {
+    height: auto;
+    font-size: 20px;
+    padding: 20px;
+    line-height: normal; } }
 
 @media screen and (max-width: 620px) {
   .quote {
@@ -100,7 +226,16 @@
       font-family: MuseoSans;
       font-size: inherit;
       font-weight: 300;
-      margin-bottom: 0; } }
+      margin-bottom: 0; }
+  .reviews {
+    margin-top: 40px; }
+    .reviews__title {
+      margin-bottom: 10px; }
+    .reviews__wrapper {
+      height: auto;
+      margin-bottom: 40px; }
+    .reviews iframe {
+      height: 300px; } }
 
 @media screen and (max-width: 505px) {
   .header {
@@ -108,3 +243,11 @@
     .header__title {
       padding-left: 3px;
       padding-right: 3px; } }
+
+@media screen and (max-width: 465px) {
+  .format__icon {
+    width: 100% !important; }
+    .format__icon:nth-of-type(1) {
+      margin-bottom: 30px; }
+  .reviews iframe {
+    height: 200px; } }

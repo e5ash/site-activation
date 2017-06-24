@@ -1,4 +1,116 @@
-@media screen and (max-width: 768px)
-	.w2, .w3, .w4, .w5, .w6
+@media screen and (max-width: 1200px)
+	.section
+		margin-left: auto
+		margin-right: auto
+	.aside
+		display: none
+@media screen and (max-width: 992px)
+	.footer
+		a
+			opacity: 1
+	.footer__links, .footer__sn
+		float: none
+		text-align: center
+	.footer__links
+		margin-bottom: 10px
+		li
+			display: block
+			margin-right: 0
+
+@media screen and (max-width: 850px)
+	body
+		padding-top: 20px
+	.header
+		&__img
+			&-1
+				left: -25px
+				width: 220px
+			&-2
+				right: -33px
+				width: 250px
+
+	.block
+		margin-bottom: 30px
+
+@media screen and (max-width: 805px)
+	.section, .block, .reviews__wrapper
+		width: 100%
+		max-width: 720px
+
+	.header
+		height: 335px
+		&__title
+			margin-bottom: 20px
+		&__imgs
+			display: none
+
+	.plan
 		.col
 			width: 100%
+
+	.reviews
+		&__wrapper
+			background: none
+			margin-left: 0
+			margin-right: 0
+		iframe
+			display: block
+			margin-left: auto !important
+			margin-right: auto !important
+			margin-top: 0
+			width: 100%
+	.quote
+		background-position-y: -20px
+		&__title
+			padding-left: 35px
+			padding-right: 35px
+			margin-top: 20px
+			br
+				display: none
+			&:before
+				left: 10px
+			&:after
+				right: 10px
+@media screen and (max-width: 680px)
+	.title
+		font-size: 26px
+@media screen and (max-width: 620px)
+	.quote
+		background-image: none
+		height: auto
+		background-color: white
+		padding-bottom: 20px
+		&__title
+			margin-bottom: 20px
+			font-size: 20px
+			line-height: normal
+			&:before, &:after
+				top: calc(50% - 25px)
+
+@media screen and (max-width: 580px)
+	.header
+		height: auto
+		padding-bottom: 20px
+		padding-left: 10px
+		padding-right: 10px
+		background-position-y: -20px
+		background-color: white
+		&__title
+			width: 100%
+			height: auto
+			background: none
+			color: black
+		&__text
+			span
+				display: inline
+				font-family: MuseoSans
+				font-size: inherit
+				font-weight: 300
+				margin-bottom: 0
+
+@media screen and (max-width: 505px)
+	.header
+		background-position-y: 35px
+		&__title
+			padding-left: 3px
+			padding-right: 3px
